@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chummang's About Me Page</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <!-- CDN to bootstrap CDN to allow usage of bootstrap classes to style your elements -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- 
+      Link to custom stylesheet
+     -->
+    <link
+      rel="stylesheet"
+      href="./assets/style/style.css"
+    />
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#" >CHUMMANG RAI</a> 
+        
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+         <!-- Nav bar items -->
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link whiteNav" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link whiteNav" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link whiteNav" href="#call-me">Contact me</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+   <!-- Header Page -->
+   <section class="notebook-hero">
+    <img class="proPic" src="../assets/images/profilepic.jpg" alt="profilepic"; />
+    <h2>Full Stack Web Developer</h2>
+    <a href="#call-me" class="btn btn-lg">Contact Me</a>
+</section>
+
+<!-- About Me Section -->
+<section class="about invert" id="about">
+    <h2>Hello!</h2>
+    <p>I am an aspiring web developer and this is my About Me Page 2.0. Responsive and Better. Hope you like it!</p>
+    
+</section>
+
+<!-- Four pictures with overlay etc -->
+<section class="fourPic invert" id="fourPic">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-3 col-md-6">
+              <img src="../assets/images/neon.jpeg" class="img-fluid" alt="Neon">
+              <div class="hint">Neon<span class="word"></span></div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <img src="../assets/images/hike.jpeg" class="img-fluid" alt="Hiking">
+              <div class="hint">Hiking <span class="word"></span></div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <img src="../assets/images/Pollution.jpeg" class="img-fluid" alt="drone">
+              <div class="hint">The Peak<span class="word"></span></div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <img src="../assets/images/Skyline.jpeg" class="img-fluid" alt="skyine">
+              <div class="hint">Yau Ma Tei<span class="word"></span></div>
+          </div>
+      </div>
+  </div>
+  <a href="#call-me" class="btn btn-lg">Follow me on IG</a>
+</section>
+ <!-- Projects -->
+ <section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="container">
+      <div class="row no-gutters">
+          <div class="col-lg-3 mr-md-auto">
+              <h4>About Me Page</h4>
+              <p>Worked on creating an About Me page. Iterating on it the more I learn about web Development and it is far from over! The page you are reading on is Version 2.0</p>
+          </div>
+          <div class="col-lg-3 mr-md-auto">
+              <h4>URL Shortner</h4>
+              <p>I worked on this project while working with APIs and will be posting as soon as I get the caode to run.
+              </p>
+          </div>
+          <div class="col-lg-3 mr-md-auto">
+              <h4>Work In Progress!</h4>
+              <p>Being Creative is difficult!</p>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+
+
+<!-- contact me -->
+<section class="call-me" id="call-me">
+  <h2>My Contact Information</h2>
+  <p>If you wanna collab, please feel free to contact me.</p>
+
+  <div class="container-fluid contacts">
+      <div class="row align-items-center">
+          <div class="col-md-3 ml-md-auto">
+              <p>+852-61514641</p>
+          </div>
+          <div class="col-md-3 mr-md-auto">
+              <p><a href="mailto:chummangrai@gmail.com">chummangrai@gmail.com</a></p>
+          </div>
+          <div class="col-md-3 mr-md-auto">
+            <p><a href="https://www.instagram.com/">Instagram</a></p>
+        </div>
+        <div class="col-md-3 mr-md-auto">
+          <p><a href="https://github.com/Chummang">Github</a></p>
+      </div>
+      </div>
+  </div>
+</section>
+
+
+    <!-- 
+      The links / CDNS to allow the usage of Bootstrap components with interactions (like modal/ navigation bar)
+     -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 
+     Link to custom JS
+    -->
+    <script src="../FTWD_Web_Day_05/assets/javascript/javascript.js"></script>
+  </body>
+</html>

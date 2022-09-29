@@ -1,0 +1,303 @@
+
+body {
+    font-family: Merriweather, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    position: relative;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  h1::after,
+  h2::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 53px;
+    margin: 1.5rem auto;
+    background-color: #f05f40;
+  }
+  
+  a {
+    color: #000000;
+  }
+  
+  .proPic {
+    height: 250px;
+    width: 250px;
+    border: 2px double black;
+    border-radius:50%;
+  }
+
+  .invert h1::after,
+  .invert h2::after {
+    background-color: #fff;
+  }
+  
+  .btn {
+    background-color: #f05f40;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 0.75rem 1.75rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+  
+  .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 0.85rem;
+  }
+  
+  .navbar {
+    border-bottom: solid 1px #fff;
+    color: #000000;
+    background-color: #E9EEF4;
+    font-weight: bold;
+  }
+  
+  .solid {
+    background: #fff;
+    border-bottom: solid 1px #fff;
+    opacity: 1;
+    transition: 0.9s;
+  }
+  
+  .whiteNav {
+    color: Black !important;
+  }
+  
+  .navbar-brand {
+    color: black !important;
+  }
+  
+  .active {
+    color: #f05f40;
+    font-weight: bold;
+  }
+  
+  .navbar-brandActive {
+    color: #f05f40 !important;
+    font-size: 1.3rem;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar-brand {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .invert {
+    background: #E9EEF4;
+    color: #fff;
+  }
+  
+  .invert .btn {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* ===============================================================Header Page================================================================== */
+  
+  .notebook-hero {
+    background-color: #E9EEF4;
+    background-size: cover;
+    height: 100vh;
+    padding: 20vh 15% 0;
+  }
+  
+  .notebook-hero h1 {
+    color: black;
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  .notebook-hero h2 {
+    color: black;
+  }
+  
+  .notebook-hero p {
+    padding: 0 10% 1rem;
+    color: white;
+  }
+  
+  .notebook-hero h1,
+  .notebook-hero .btn {
+    text-transform: uppercase;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .notebook-hero {
+      padding: 10vh 10% 0;
+    }
+
+    .proPic {
+      height: 150px;
+      width: 150px;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .notebook-hero {
+      height: 85vh;
+    }
+    .notebook-hero h1 {
+      font-size: 8vw;
+    }
+    .notebook-hero .btn {
+      text-transform: uppercase;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .notebook-hero .btn {
+      font-size: 0.5rem;
+    }
+  }
+  
+  /* ===============================================================about================================================================== */
+  
+  .about {
+    background: #78A6C8;
+    padding: 10% 20%;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .about {
+      padding: 7% 10%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .about {
+      padding: 7% 5%;
+    }
+  }
+  
+  .about p {
+    color: #ffffff99;
+  }
+  
+  .about .btn {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* ===============================================================Projects================================================================== */
+  
+  .projects {
+    text-align: center;
+    padding: 8% 0;
+    background: #326789;
+  }
+  
+  .projects i.fa {
+    color: #f05f40;
+  }
+  
+  .projects .row h4 {
+    margin: 1rem;
+  }
+  
+  .projects p {
+    color: #00000099;
+  }
+  
+  /* ===============================================================fourpics================================================================== */
+  
+  .fourPic {
+    background: #6497b1;
+    padding: 0 0 0%;
+    height: 50vh;
+  }
+  
+  .fourPic p {
+    color: #326789;
+  }
+  
+  .fourPic .container-fluid,
+  .fourPic .row > div {
+    padding: 0;
+    position: relative;
+  }
+  
+  .fourPic .row {
+    margin: 0;
+  }
+  
+  .fourPic .hint {
+    opacity: 0;
+    transition: opacity 2s;
+    background: blue;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #ffffff99;
+  }
+  
+  .fourPic .hint:hover {
+    opacity: 1;
+  }
+  
+  .fourPic .hint span.word {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .fourPic h2 {
+    margin: 1.5rem 0;
+  }
+  
+  .fourPic h2::after {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .fourPic {
+      background: #6497b1;
+      padding: 0 0 0%;
+      height: 200vh;
+    }
+  }
+  
+  /* ===============================================================callme================================================================== */
+  
+  .call-me {
+    padding: 7% 10%;
+  }
+  
+  .call-me p {
+    padding: 0 20% 1rem;
+    color: #00000099;
+  }
+  
+  .call-me .contacts {
+    margin: 2rem 0;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .call-me {
+      padding: 7% 10%;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .call-me {
+      padding: 7% 5%;
+    }
+  }
+  
